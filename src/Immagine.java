@@ -1,5 +1,5 @@
 public class Immagine extends Element {
-	private String title;
+
 	private int brightness;
 
 	public Immagine (String title, int time, int brightness) {
@@ -8,12 +8,24 @@ public class Immagine extends Element {
 	}
 
 	//metod for Brightness
+	@Override
 	public void upBrightness () {
 		brightness++;
 	}
 
+	@Override
 	public void downBrightness () {
 		brightness--;
+	}
+
+	@Override
+	public void upVolume () {
+		//nada
+	}
+
+	@Override
+	public void downVolume () {
+		//nada
 	}
 
 	@Override

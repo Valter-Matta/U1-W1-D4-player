@@ -1,7 +1,7 @@
 public abstract class Element {
 
-	private String title;
-	private int time;
+	private final String title;
+	private final int time;
 
 
 	public Element (String title, int time) {
@@ -9,16 +9,23 @@ public abstract class Element {
 		this.time = time;
 	}
 
-	public int getTime(){
+	public int getTime () {
 		return time;
 	}
-	public String getTitle(){
+
+	public String getTitle () {
 		return title;
 	}
 
-	public abstract void play();
+	//metod for Brightness
+	public abstract void upBrightness ();
+	public abstract void downBrightness ();
+//metod for volume
+	public abstract void upVolume ();
+	public abstract void downVolume ();
 
 
+	public abstract void play ();
 
 
 }

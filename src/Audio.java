@@ -1,6 +1,5 @@
 public class Audio extends Element {
 
-
 	private int volume;
 
 	public Audio (String nome, int time, int volume) {
@@ -8,17 +7,25 @@ public class Audio extends Element {
 		this.volume = volume;
 	}
 
-	//getter
-	public int getVolume () {
-		return volume;
-	}
-
+	@Override
 	public void upVolume () {
 		volume++;
 	}
 
+	@Override
 	public void downVolume () {
 		volume--;
+	}
+
+	//metod for Brightness
+	@Override
+	public void upBrightness () {
+		//
+	}
+
+	@Override
+	public void downBrightness () {
+		//
 	}
 
 	@Override
